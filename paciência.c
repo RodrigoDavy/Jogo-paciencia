@@ -61,18 +61,10 @@ void main(void)
 		switch (opcao)
 		{
 			case 'A':
-				proximaCarta();
-				break;
 			case 'a':
 				proximaCarta();
 				break;
 			case 'B':
-				printf("Digite a linha e coluna da carta que você deseja mover.\n");
-				scanf("%d %d",&i,&j);
-				printf("Digite a coluna onde você deseja colocar a carta.\n");
-				scanf("%d",&j2);
-				moveBaixoBaixo(i,j,j2);
-				break;
 			case 'b':
 				printf("Digite a linha e coluna da carta que você deseja mover.\n");
 				scanf("%d %d",&i,&j);
@@ -81,36 +73,22 @@ void main(void)
 				moveBaixoBaixo(i,j,j2);
 				break;
 			case 'C':
-				printf("Digite a coluna onde você deseja colocar a carta.\n");
-				scanf("%d",&j);
-				moveMonteBaixo(j);
-				break;
 			case 'c':
 				printf("Digite a coluna onde você deseja colocar a carta.\n");
 				scanf("%d",&j);
 				moveMonteBaixo(j);
 				break;
 			case 'D':
-				printf("Digite a coluna de onde você deseja tirar a carta.\n");
-				scanf("%d",&j);
-				moveBaixoCima(j);
-				break;
 			case 'd':
 				printf("Digite a coluna de onde você deseja tirar a carta.\n");
 				scanf("%d",&j);
 				moveBaixoCima(j);
 				break;
 			case 'E':
-				moveMonteCima();
-				break;
 			case 'e':
 				moveMonteCima();
 				break;
 			case 'F':
-				printf("Digite o naipe [c/e/o/p] e a coluna onde você deseja inserir a carta.\n");
-				scanf(" %c %d",&c,&j);
-				moveCimaBaixo(c,j);
-				break;
 			case 'f':
 				printf("Digite o naipe [c/e/o/p] e a coluna onde você deseja inserir a carta.\n");
 				scanf(" %c %d",&c,&j);
