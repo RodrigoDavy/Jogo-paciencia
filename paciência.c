@@ -39,7 +39,7 @@ void main(void)
 
 	criarMonte();
 	embaralharMonte();
-/*  imprimeMonte();    */
+/*	imprimeMonte();    */
 	distribuiCartas();
 
 	
@@ -354,12 +354,12 @@ int moveBaixoBaixo(int i,int j,int j2)
 
 		if((add->naipe=='c' && rem->naipe=='o') ||
 		   (add->naipe=='o' && rem->naipe=='c') ||
-           (add->naipe=='p' && rem->naipe=='e') ||
-           (add->naipe=='e' && rem->naipe=='p') ||
-           (add->naipe=='c' && rem->naipe=='c') ||
-           (add->naipe=='e' && rem->naipe=='e') ||
-           (add->naipe=='o' && rem->naipe=='o') ||
-           (add->naipe=='p' && rem->naipe=='p'))
+		   (add->naipe=='p' && rem->naipe=='e') ||
+		   (add->naipe=='e' && rem->naipe=='p') ||
+		   (add->naipe=='c' && rem->naipe=='c') ||
+		   (add->naipe=='e' && rem->naipe=='e') ||
+		   (add->naipe=='o' && rem->naipe=='o') ||
+		   (add->naipe=='p' && rem->naipe=='p'))
 			return 0;
 
 		add->prox = rem;
@@ -393,13 +393,13 @@ int moveMonteBaixo(int j)
 			return 0;
 
 		if((n1->naipe=='c' && atual->naipe=='o') ||
-           (n1->naipe=='o' && atual->naipe=='c') ||
-           (n1->naipe=='p' && atual->naipe=='e') ||
-           (n1->naipe=='e' && atual->naipe=='p') ||
-           (n1->naipe=='c' && atual->naipe=='c') ||
-           (n1->naipe=='e' && atual->naipe=='e') ||
+		   (n1->naipe=='o' && atual->naipe=='c') ||
+		   (n1->naipe=='p' && atual->naipe=='e') ||
+		   (n1->naipe=='e' && atual->naipe=='p') ||
+		   (n1->naipe=='c' && atual->naipe=='c') ||
+		   (n1->naipe=='e' && atual->naipe=='e') ||
 		   (n1->naipe=='o' && atual->naipe=='o') ||
-           (n1->naipe=='p' && atual->naipe=='p'))
+		   (n1->naipe=='p' && atual->naipe=='p'))
 			return 0;
 	}
 
@@ -605,12 +605,12 @@ int moveCimaBaixo(char c,int j)
 
 		if((n1->naipe=='c' && n2->naipe=='o') ||
 		   (n1->naipe=='o' && n2->naipe=='c') ||
-           (n1->naipe=='p' && n2->naipe=='e') ||
-           (n1->naipe=='e' && n2->naipe=='p') ||
-           (n1->naipe=='c' && n2->naipe=='c') ||
-           (n1->naipe=='e' && n2->naipe=='e') ||
-           (n1->naipe=='o' && n2->naipe=='o') ||
-           (n1->naipe=='p' && n2->naipe=='p'))
+		   (n1->naipe=='p' && n2->naipe=='e') ||
+		   (n1->naipe=='e' && n2->naipe=='p') ||
+		   (n1->naipe=='c' && n2->naipe=='c') ||
+		   (n1->naipe=='e' && n2->naipe=='e') ||
+		   (n1->naipe=='o' && n2->naipe=='o') ||
+		   (n1->naipe=='p' && n2->naipe=='p'))
 			return 0;
 
 		n2->prox=n1;
