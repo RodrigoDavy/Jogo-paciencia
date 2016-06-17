@@ -8,27 +8,27 @@ typedef struct no {
 	struct no *prox;
 }noCarta;
 
-noCarta *monte;
-noCarta *pilhaDeBaixo[7];
-noCarta *pilhaDeCima[4];
-noCarta *atual;
+noCarta	*monte;
+noCarta	*pilhaDeBaixo[7];
+noCarta	*pilhaDeCima[4];
+noCarta	*atual;
 
-int      linhaEscondida[7];
+int		linhaEscondida[7];
 
-noCarta *removeMonte(int);               /* Remove uma carta do monte */
-void     criarMonte(void);               /* Aloca o baralho a ser usado no jogo */
-void     imprimeMonte(void);             /* Imprime todas as cartas do monte, função de debug */
-void     embaralharMonte(void);          /* Embaralha todas as cartas do monte */
-void     distribuiCartas(void);          /* Cria a mesa do jogo, distribui as cartas pelas colunas de baixo */
-void     imprimeCartas(void);            /* Imprime a mesa do jogo */
-void     proximaCarta(void);             /* Mostra a próxima carta do monte de cima */
-int      podeMover(noCarta*, noCarta*);  /* Verifica se uma operação de mover cartas é válida */
-int      moveBaixoBaixo(int, int, int);
-int      moveMonteBaixo(int);
-int      naipeCima(char);
-int      moveBaixoCima(int);
-int      moveMonteCima(void);
-int      moveCimaBaixo(char,int);
+noCarta	*removeMonte(int);				/* Remove uma carta do monte */
+void	criarMonte(void);				/* Aloca o baralho a ser usado no jogo */
+void	imprimeMonte(void);				/* Imprime todas as cartas do monte, função de debug */
+void	embaralharMonte(void);			/* Embaralha todas as cartas do monte */
+void	distribuiCartas(void);			/* Cria a mesa do jogo, distribui as cartas pelas colunas de baixo */
+void	imprimeCartas(void);			/* Imprime a mesa do jogo */
+void	proximaCarta(void);				/* Mostra a próxima carta do monte de cima */
+int		podeMover(noCarta*, noCarta*);	/* Verifica se uma operação de mover cartas é válida */
+int		moveBaixoBaixo(int, int, int);
+int		moveMonteBaixo(int);
+int		naipeCima(char);
+int		moveBaixoCima(int);
+int		moveMonteCima(void);
+int		moveCimaBaixo(char,int);
 
 void main(void)
 {
@@ -49,12 +49,12 @@ void main(void)
 
 		imprimeCartas();
 
-		printf("O que você deseja fazer?\na - Ver a próxima carta do monte\n");
-		printf("b - Mover uma carta de uma pilha a outra\n");
-		printf("c - Mover uma carta do monte a uma pilha\n");
-		printf("d - Mover uma carta de uma pilha até a pilha de cima\n");
-		printf("e - Mover carta do monte para pilha de cima\n");
-		printf("f - Mover a carta da pilha de cima para a pilha de baixo\n\n");
+		printf("O que você deseja fazer?\na - Ver a próxima carta do monte\n"
+		       "b - Mover uma carta de uma pilha a outra\n"
+		       "c - Mover uma carta do monte a uma pilha\n"
+		       "d - Mover uma carta de uma pilha até a pilha de cima\n"
+		       "e - Mover carta do monte para pilha de cima\n"
+		       "f - Mover a carta da pilha de cima para a pilha de baixo\n\n");
 
 		scanf(" %c",&opcao);
 
