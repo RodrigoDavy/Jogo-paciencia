@@ -50,7 +50,7 @@ void main(void)
 		imprimeCartas();
 
 		printf("O que você deseja fazer?\na - Ver a próxima carta do monte\n");
-        printf("b - Mover uma carta de uma pilha a outra\n");
+		printf("b - Mover uma carta de uma pilha a outra\n");
 		printf("c - Mover uma carta do monte a uma pilha\n");
 		printf("d - Mover uma carta de uma pilha até a pilha de cima\n");
 		printf("e - Mover carta do monte para pilha de cima\n");
