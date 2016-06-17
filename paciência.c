@@ -127,7 +127,7 @@ void criarMonte(void)
 	int      c1,c2;
 	noCarta *n = NULL;
 
-	n=(noCarta *)malloc(sizeof(noCarta));
+	n= malloc(sizeof(noCarta));
 
 	monte=n;
 
@@ -148,7 +148,7 @@ void criarMonte(void)
 
 			if(c1!=3 || c2!=13)
 			{
-				n->prox=(noCarta *)malloc(sizeof(noCarta));
+				n->prox = malloc(sizeof(noCarta));
 				n=n->prox;
 			}
 			else
