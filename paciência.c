@@ -15,14 +15,14 @@ noCarta	*atual;
 
 int		linhaEscondida[7];
 
-noCarta	*removeMonte(int);				/* Remove uma carta do monte */
-void	criarMonte(void);				/* Aloca o baralho a ser usado no jogo */
-void	imprimeMonte(void);				/* Imprime todas as cartas do monte, função de debug */
-void	embaralharMonte(void);			/* Embaralha todas as cartas do monte */
-void	distribuiCartas(void);			/* Cria a mesa do jogo, distribui as cartas pelas colunas de baixo */
-void	imprimeCartas(void);			/* Imprime a mesa do jogo */
-void	proximaCarta(void);				/* Mostra a próxima carta do monte de cima */
-int		podeMover(noCarta*, noCarta*);	/* Verifica se uma operação de mover cartas é válida */
+noCarta		*removeMonte(int)			/* Remove uma carta do monte */
+void		criarMonte(void);			/* Aloca o baralho a ser usado no jogo */
+void		imprimeMonte(void);			/* Imprime todas as cartas do monte, função de debug */
+void		embaralharMonte(void);			/* Embaralha todas as cartas do monte */
+void		distribuiCartas(void);			/* Cria a mesa do jogo, distribui as cartas pelas colunas de baixo */
+void		imprimeCartas(void);			/* Imprime a mesa do jogo */
+void		proximaCarta(void);			/* Mostra a próxima carta do monte de cima */
+int		podeMover(noCarta*, noCarta*);		/* Verifica se uma operação de mover cartas é válida */
 int		moveBaixoBaixo(int, int, int);
 int		moveMonteBaixo(int);
 int		naipeCima(char);
