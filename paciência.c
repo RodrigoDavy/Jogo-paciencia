@@ -15,7 +15,7 @@ noCarta	*atual;
 
 int		linhaEscondida[7];
 
-noCarta		*removeMonte(int)			/* Remove uma carta do monte */
+noCarta		*removeMonte(int);			/* Remove uma carta do monte */
 void		criarMonte(void);			/* Aloca o baralho a ser usado no jogo */
 void		imprimeMonte(void);			/* Imprime todas as cartas do monte, função de debug */
 void		embaralharMonte(void);			/* Embaralha todas as cartas do monte */
