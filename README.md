@@ -12,6 +12,6 @@ Este programa tem UI horrível em linha de comando
 
 An implementation of the Solitaire game in C using dynamic lists
 
-This software was a university project
+This software was an university project
 
 This software has an horrible command-line UI
